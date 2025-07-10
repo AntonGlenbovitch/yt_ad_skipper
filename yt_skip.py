@@ -14,10 +14,15 @@ from selenium.common.exceptions import (
     NoSuchElementException,
 )
 
+
 # 🔗 Constants
-YOUTUBE_URL = "https://www.youtube.com/watch?v=MICPyrnGYwg"
-CHROMEDRIVER_PATH = "/Users/ag/projects/yt_skip/chromedriver"
-CHROME_USER_DATA_DIR = "/Users/ag/chrome-profile"
+YOUTUBE_URL = "https://www.youtube.com"
+CHROMEDRIVER_PATH = "path/to/chromedriver"
+CHROME_USER_DATA_DIR = "path/to/chrome-profile"
+# OR use import os:
+# CHROMEDRIVER_PATH = os.getenv("CHROMEDRIVER_PATH", "/path/to/chromedriver")
+# CHROME_USER_DATA_DIR = os.getenv("CHROME_USER_DATA_DIR", "/path/to/chrome-profile")
+#
 HEADLESS_MODE = False  # Set to True if running in background/CI
 
 # 🧾 Logging Setup
